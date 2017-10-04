@@ -12,6 +12,9 @@ public class SplashScreenPage extends BasePage{
     @AndroidFindBy(id = "sign_in_button")
     private MobileElement signInButton;
 
+    @AndroidFindBy(id = "title_text_view")
+    private MobileElement titleText;
+
     public SplashScreenPage(final AppiumDriver driver) {
         super(driver);
     }
@@ -22,6 +25,10 @@ public class SplashScreenPage extends BasePage{
 
     public MobileElement getSignInButton() {
         return signInButton;
+    }
+
+    public MobileElement getTitleText() {
+        return titleText;
     }
 
     public void clickSignUpButton() {
